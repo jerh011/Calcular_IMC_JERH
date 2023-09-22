@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calcular_IMC_JERH.MainPage">
+
+
+    <StackLayout BackgroundColor="#C0C0C0">
+        <StackLayout Margin="10,10">
+            <Frame BackgroundColor="Black" Padding="24" CornerRadius="20">
+                <Label Text="Calcular IMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Peso en Kg" BackgroundColor="Black" TextColor="White" />
+            <Entry Placeholder="Peso(Kg)" x:Name="Peso" Keyboard="Numeric"/>
+
+            <Label Text="Altura en M" BackgroundColor="Black" TextColor="White"/>
+            <Entry Placeholder="Altura(m)" x:Name="Altura" Keyboard="Numeric"/>
+
+            <Entry Placeholder="IMC" x:Name="IMC" IsEnabled="False"/>
+            <Button Text="Calcular IMC" Clicked="Button_Clicked" CornerRadius="10" BackgroundColor="#D2691E"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
